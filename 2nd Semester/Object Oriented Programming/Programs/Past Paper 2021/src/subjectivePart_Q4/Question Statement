@@ -1,0 +1,5 @@
+Develop a program to read a text file. Process the read text by using String
+class methods in the following order:
+
+i. Convert all text into lowercase (Hint use String's tolower method)
+ii. Count no. of words in the text (Hint use String's split method)

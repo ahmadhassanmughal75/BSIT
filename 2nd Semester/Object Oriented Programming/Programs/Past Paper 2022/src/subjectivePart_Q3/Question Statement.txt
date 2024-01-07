@@ -1,0 +1,6 @@
+Write a temperature-conversion application that converts from Fahrenheit to Celsius.
+The Fahrenheit temperature should be entered from the keyboard (via a JTextField). An
+un-editable Text-field should be used to display the converted temperature when user
+clicks on the conversion button. Use the following formula for the conversion:
+
+    Celsius = 5 / 9 * (Fahrenheit - 32)
