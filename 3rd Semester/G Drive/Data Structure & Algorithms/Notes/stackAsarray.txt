@@ -1,0 +1,29 @@
+import java.util.*;
+public class stackAsarray{
+int top=0;
+int array[4];
+array[0]=5;
+array[1]=4;
+array[2]=8;
+array[3]=9;
+
+public void push(){
+ 
+ for(int x=0;x<4;x++){
+ top=array[x];
+  System.out.println(top);
+}
+public void pop(){
+
+
+for(int x=4;x>0;x--){
+top =array[x];
+System.out.println(top);
+}
+
+public static void main(String []args){
+
+stackAsarray st=new stackAsarray();
+st.push();
+st.pop();
+}
