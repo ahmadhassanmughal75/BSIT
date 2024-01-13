@@ -1,0 +1,34 @@
+Short Questions of ALl excercises
+IDE
+Fragments
+Activity
+Toast Class
+Notificatin Manager
+Views
+Database Chapter
+Three Methods to save data = long and short
+Permissions
+How to set internel and external path
+Content Provider CHapter
+How to register content provider in android manifest file?
+How to Configure Email? : Two Protocols to configure
+Time Picker & Date Picker Java Code
+Locatins Chapter
+Method to monitor Location
+Get, Post, Jason
+Android SDK & JDK 
+Menu : Option Menu
+Db Adapter Class?
+String.xml file?
+Why Absolute layout is not recomended?
+					LONG
+1)What is Android? Features? Architecture? Android Stack?
+2)Activity? Diagram? Methods? Lifecycle?
+3)Freagments? Diagram? Lifecycle?
+4)Layouts Chapter? All Layout? Frame Layout? Table Layout ? Linear OUt?
+5)View Chapter? Time Picker? Date Picker?
+6)How to Publish Android Application? Four Steps?
+7)Screen Orientation Chapter with XML Code?
+8)How many ways to save data? Explain All?
+9)Write a Note on Content Provider?
+10)Socket Programming?

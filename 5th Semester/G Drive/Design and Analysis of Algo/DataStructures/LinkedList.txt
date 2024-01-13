@@ -1,0 +1,87 @@
+
+public class LinkedList {
+
+	class Node{
+		int data;
+		Node next=null;
+		
+		public Node(int data) {
+			this.data=data;
+			this.next=null;
+		}
+	}
+	
+	Node head=null;
+	
+	public boolean isEmpty() {
+		if(head==null) {
+			return true;
+		}else 
+			return false;
+	}
+	public void insert(int data) {
+		if(head==null) {
+			head=new Node(data);
+		}else
+		{
+			Node lNode =head;
+			while(lNode.next!=null) {
+				lNode=lNode.next;
+			}
+			lNode.next=new Node(data);
+		}
+	}
+	
+	public void insertFirst(int data) {
+		if(isEmpty()) {
+			head=new Node(data);
+			head.next=null;
+		}else
+		{
+			Node fNode=new Node( data);
+			fNode.next=head;
+			head=fNode;
+		}
+	}
+	public void del() {
+		if(isEmpty()) {
+			System.out.println("List is already Emtpy");
+		}else if(head.next==null) {
+			head=null;
+		}else
+		{
+			Node last =head;
+			Node pre=head;
+			while(last.next!=null);
+			{
+				pre=last;
+				last=last.next;
+			}
+			pre.next=null;
+		}
+		
+	}
+	public void detAtFirst() {
+		if(isEmpty()) {
+			System.out.println("NOthing to del");
+		}
+		else {
+			head=head.next;
+		}
+	}
+	
+	
+	
+	
+	
+	public void show() {
+		Node tNode=head;
+		
+		while(tNode!=null) {
+			
+			System.out.println(tNode.data);
+			tNode = tNode.next;
+			
+		}
+	}
+}

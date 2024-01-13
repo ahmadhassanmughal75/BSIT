@@ -1,0 +1,19 @@
+
+public class BubbleSort {
+	private int[] arr= {7,3,2,1,5,4,7,9};
+
+	public void Sort() {
+		for(int i=8;i>0;i--) {
+			for(int j=0;j<i-1;j++) {
+				if(arr[j]>arr[j+1]) {
+					int temp=arr[j];
+					arr[j]=arr[j+1];
+					arr[j+1]=temp;
+				}
+			}
+		}
+		for(int i=0;i<8;i++) {
+			System.out.println(arr[i]);
+		}
+	}
+}

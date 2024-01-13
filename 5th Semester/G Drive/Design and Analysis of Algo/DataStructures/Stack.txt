@@ -1,0 +1,52 @@
+
+public class Stack {
+
+	private int cap;
+	private int top;
+	int[] arr;
+	public Stack(int c) {
+		this.cap=c;
+		top=-1;
+		arr=new int[c];
+	}
+	public boolean isEmpty() {
+		return(top==-1);
+	}
+	public boolean isFull() {
+		return (top==cap);
+	}
+	
+	
+	public void push(int data) {
+		if(isFull()) {
+			System.out.println("Stack OverFlow");
+			System.exit(0);
+		}else
+		{
+			top=top+1;
+			arr[top]=data;
+		}
+	}
+	
+	public void pop() {
+		
+		if(!isEmpty()) {
+		System.out.println(arr[top]);
+		top=top-1;}
+		else {
+			System.out.println("Stack UnderFlow");
+		}
+	}
+	public void printTop() {
+		System.out.println(arr[top]);
+	}
+	public void show() {
+		if(!isEmpty()) {
+			for(int i=0;i<arr.length;i++) {
+				System.out.println(arr[i]);
+			}
+		}else
+			System.out.println("Stack Underflow");
+		System.exit(0);
+	}
+}

@@ -1,0 +1,55 @@
+
+public class Queue {
+
+	private int cap;
+	private int rem;
+	private int front;
+	private int rear;
+	int[] arr;
+	
+	public Queue(int c) {
+		arr=new int[c];
+		this.cap=c;
+		front=rem=0;
+		rear=cap-1;
+	}
+	public boolean isFull() {
+		return(rem==cap);
+	}
+	public boolean isEmpty() {
+		return (rem==0);
+	}
+	public void enQeue(int data) {
+		if(!isFull()) {
+			rear=(rear+1)%cap;
+			arr[rear]=data;
+			rem=rem+1;
+		}else
+		{
+			System.out.println("Queue is Full");
+		}
+	}
+	
+	public void deQueue() {
+		if(!isEmpty()) {
+			System.out.println(arr[front]);
+			front=(front+1)%cap;
+			rem=rem-1;
+		}else
+		{
+			System.out.println("Queue is Empty");
+		}
+	}
+	
+	public void show() {
+		if(!isEmpty()) {
+			for(int i=0;i<arr.length;i++) {
+				System.out.println(arr[i]);
+			}
+		}
+	}
+	
+	
+	
+	
+}

@@ -1,0 +1,35 @@
+import java.util.*;
+
+public class LinearSearch {
+
+	private int c=0;
+	private int[] arr=new int[5];
+	Scanner s1=new Scanner(System.in);
+	
+	public void inData() {
+		for(int i=0;i<5;i++) {
+		System.out.println("Enter Element for index "+i);	
+		arr[i]=s1.nextInt();
+		}
+	}
+	public void SearchElement() {
+		System.out.println("Enter Element to Search in array");
+		int n = s1.nextInt();
+		for(int i=0;i<5;i++) {
+			if(n==arr[i]) {
+				System.out.println("No found at "+i+" index");
+				c=1;
+				break;
+			}
+			
+		}
+		if(c==0) {
+			System.out.println("No not Found");
+		}
+		
+	}
+	
+
+	
+
+}

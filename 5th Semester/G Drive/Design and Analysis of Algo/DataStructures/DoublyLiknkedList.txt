@@ -1,0 +1,63 @@
+
+public class DoublyLinkedList {
+
+	class Node{
+		Node pre,next;
+		int data;
+		public Node(int data) {
+			pre=next=null;
+			this.data=data;
+		}
+		
+	}
+	
+	Node head=null;
+	Node tail=null;
+	
+	public boolean isEmpty() {
+		return (tail==null);
+	}
+	public void insert(int data) {
+		if(isEmpty()) {
+			Node new_Node=new Node(data);
+			head=tail=new_Node;
+		}else
+		{
+			Node new_Node=new Node(data);
+			tail.next=new_Node;
+			new_Node.pre=tail;
+			tail=new_Node;
+			
+		}
+	}
+	public void del() {
+		if(isEmpty()) {
+			System.out.println("Linked List is Already Empty");
+			System.exit(0);
+		}else if(head==tail) {
+			System.out.println(tail.data+" deleted and Now linked list is empty");
+			head=tail=null;
+			
+		}
+		else {
+			Node t_Node=tail.pre;
+			tail=t_Node;
+			tail.next=null;
+		}
+	}
+	
+	public void show_tail() {
+		System.out.println(tail.data);
+	}
+	public void show()
+	{
+		Node t=head;
+		
+		while(t.next!=null) {
+		System.out.println(t.data);
+		t=t.next;
+			
+					
+		}System.out.println(t.data);
+	}
+}
